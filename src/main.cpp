@@ -10,9 +10,13 @@ int main()
     string bases = "";
 
 
-    cout<<"\nWelcome to the DNA generator\n\n\tPlease enter a seed, the letter bases to be used (e.g. TGAC) \n\tand the length of the DNA sequence to be generated\n\n\t>>> ";   
+    cout<<"Welcome to the DNA generator,Please enter a seed"<< endl; 
+    cin>>seed;
+    cout << "The letter bases to be used (e.g. TGAC) "<< endl; 
+    cin>>bases;
+    cout << "the length of the DNA sequence to be generated>>> "<< endl;  
 
-    cin>>seed>>bases>>n;//read the three inputs
+    cin>>n;//read the three inputs
 
     cout <<"\n\nOutput:\n\t"<<randDNA(seed,bases,n)<<endl; //print output  
 }
